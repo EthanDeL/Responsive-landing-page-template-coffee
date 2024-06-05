@@ -5,7 +5,7 @@
 * Template by Freepik
 
 * Image Source:
-    * Image created by Freepk
+    * Image created by Freepik
         * 👉: https://www.freepik.com/free-vector/flat-minimal-coffee-shop-landing-page-template_21785627.htm#query=coffee%20template&position=32&from_view=author&uuid=3e272b79-d206-4c3e-843a-8b8139e9d63c
         * 👉 : https://www.freepik.com/free-photo/top-view-cup-coffee_13661744.htm#page=2&query=cofee&position=42&from_view=author&uuid=c283356c-aa52-4b40-854d-f0ed4e8b6e19
 
