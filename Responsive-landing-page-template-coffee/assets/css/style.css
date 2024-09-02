@@ -1,0 +1,638 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* VARIABLES */
+:root{
+    /* COLORS */
+    --primary-color: hsl(21, 70%, 4%); 
+    --secondary-color: hsl(0, 0%, 96%); 
+    --coffee-color: hsl(31, 59%, 68%); 
+    --shadow-navbar: hsl(0, 0%, 92%);
+    --shadow: hsla(0, 0%, 0%, 0.651);
+    --light-white: hsla(0, 0%, 100%, 0.801); 
+
+    /* FONT-WEIGHT */
+    --big-font-weight: 800;
+    --medium-font-weight: 600;
+    --normal-font-weight: 400;
+
+    /* FONT-FAMILY */
+    --font-1: "Dancing Script", cursive;
+    --font-2: "Poppins", sans-serif;
+}
+
+/* BASE */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+}
+.font-1{
+    font-family: var(--font-1);
+}
+.font-2{
+    font-family: var(--font-2);
+}
+
+/* HOME PAGE */
+.home-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* NAVBAR */
+.navbar{
+    position: sticky;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+.logo i{
+    font-size: 2.2em;
+}
+.logo-text-container{
+    font-size: 1em;
+    font-family: var(--font-2);
+    font-weight: var(--medium-font-weight);
+    line-height: 15px;
+}
+.logo a:hover{
+    cursor: pointer;
+}
+.nav-element{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    height: 100%;
+}
+.nav-link ul{
+    display: flex;
+}
+.nav-link ul li{
+    padding: 0 7px;
+    font-weight: var(--normal-font-weight);
+}
+.nav-link ul li a{
+    padding: 3px 9px;
+    font-size: 1em;
+    font-family: var(--font-2);
+    color: var(--primary-color);
+}
+.nav-link ul li a:hover{
+    border-bottom: .5px solid var(--primary-color);
+    transition: .3s ease-in;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+.input-box{
+    width: 300px;
+    height: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+}
+.input-box, 
+.input-box::placeholder{
+    font-size: 1em;
+    font-family: var(--font-2);
+    color: var(--primary-color);
+}
+.input-box::placeholder{
+    padding: 0 15px;
+}
+.input-box:focus{
+    padding: 7 15px;
+    font-size: 1em;
+}
+.search-icon{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    right: 35px;
+    padding: 7px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.search-icon i{
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+.menu-hamburger{
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    top: 2.5em;
+    right: 3em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar-menu{
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+}
+
+/* CONTAINER */
+.home-page-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first-title{
+    font-size: 4.5em !important;
+}
+.title-text{
+    font-size: 3.5em;
+    font-weight: var(--normal-font-weight);
+    line-height: 60px;
+}
+.bold{
+    font-weight: var(--medium-font-weight);
+    color: var(--coffee-color);
+}
+.title-content{
+    display: flex;
+}
+.details{
+    width: 20%;
+    height: auto;
+    margin: 50px 0;
+}
+.text{
+    font-size: 1em;
+    font-weight: normal;
+}
+.button{
+    margin-bottom: 70px;
+}
+.btn{
+    padding: 7px 30px;
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+.btn:hover{
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: .5s ease-in;
+}
+.end-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.information{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.information img{
+    position: relative;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+}
+.information-text{
+    width: 40%;
+    padding: 0 15px;
+}
+.social-network-container{
+    position: relative;
+    width: 30%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.social-network-icon i{
+    padding: 0 5px;
+    font-size: 1.5em;
+    font-weight: var(--normal-font-weight);
+}
+.container-coffee{
+    position: absolute;
+    right: 0;
+    width: 28%;
+    height: 100%;
+    background-color: var(--coffee-color);
+    z-index: -1;
+}
+.coffee-image-section{
+    width: 100%;
+    height: 100vh;
+}
+.coffee-img{
+    position: absolute;
+    top: -42px;
+    right: 75px;
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(1px 10px 25px var(--shadow)) brightness(.99999);
+}
+
+    /* BREAKPOINTS */
+@media screen and (max-width:1436px) {
+    .navbar{
+        margin-bottom: 75px;
+    }
+    .nav-element{
+        width: 60%;
+    }
+    .input-box{
+        position: relative;
+        left: 25px;
+    }
+    .search-icon{
+        right: 25px;
+    }
+    .details{
+        width: 25%;
+        margin: 50px 0;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -25px;
+        right: 50px;
+        width: 46%;
+    }
+}
+@media screen and (max-width: 1336px){
+    .nav-element{
+        width: 63%;
+    }
+    .input-box{
+        position: relative;
+        left: 35px;
+    }
+    .search-icon{
+        right: 15px;
+    }
+    .details{
+        width: 30%;
+        margin: 30px 0;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        width: 46%;
+    }
+}
+@media screen and (max-width: 1300px){
+    .navbar{
+        margin-bottom: 50px;
+    }
+    .input-box{
+        position: relative;
+        left: 35px;
+        width: 275px;
+    }
+    .search-icon{
+        right: 15px;
+    }
+    .details{
+        width: 32%;
+        margin: 30px 0;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -25px;
+        right: 40px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .nav-element{
+        width: 65%;
+    }
+    .details{
+        margin: 25px 0;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -30px;
+        right: 0;
+        width: 52%;
+    }
+    .first-title{
+        font-size: 4em !important;
+    }
+    .title-text{
+        font-size: 3em;
+        line-height: 50px;
+    }
+    .text{
+        font-size: .9em;
+    }
+    .btn{
+        padding: 7px 30px;
+        font-size: .9em;
+    }
+    .input-box{
+        width: 250px;
+        padding: 7px;
+    }
+    .search-icon{
+        position: relative;
+        width: 65px;
+        padding: 7px 13px;
+    }
+}
+@media screen and (max-width: 1110px){
+    .nav-link ul li a{
+        padding: 3px 6px;
+    }
+    .input-box{
+        width: 225px;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -25px;
+        width: 57%;
+    }
+    .title-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1021px){
+    .nav-element{
+        width: 70%;
+    }
+    .input-box{
+        position: relative;
+        left: 50px;
+    }
+    .search-icon{
+        right: 10px;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -50px;
+        width: 60%;
+        right: -25px;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 960px){
+    .nav-element{
+        width: 75%;
+    }
+    .details{
+        width: 40%;
+        margin: 30px 0;
+    }
+    .input-box{
+        position: relative;
+        left: 60px;
+    }
+    .search-icon{
+        right: 0;
+    }
+}
+@media screen and (max-width: 896px){
+    .menu-hamburger{
+        display: flex;
+    }
+    .logo{
+        z-index: 3;
+    }
+    .nav-link{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-content: center;
+        background-color: var(--light-white);
+        backdrop-filter: blur(15px);
+    }
+    .nav-link.active{
+        display: flex;
+    }
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link ul li{
+        margin: 25px 0;
+        font-size: 1em;
+    }
+    .nav-link ul li a{
+        border: none;
+    }
+    .nav-element{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }    
+    .input-box{
+        display: none;
+    }
+    .search-icon{
+        position: relative;
+        width: 50px;
+        right: 70px;
+    }
+    .search-icon i{
+        font-size: 1.1em;
+    }
+    .first-title{
+        font-size: 3em !important;
+    }
+    .title-text{
+        font-size: 2.8em;
+        line-height: 45px;
+    }
+    .text,
+    .btn{
+        font-size: .875em;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -50px;
+        width: 60%;
+        right: -75px;
+        
+    }
+}
+@media screen and (max-width: 872px){
+    .information{
+        display: none;
+    }
+    .end-container{
+        height: 75px;
+    }
+    .social-network-container{
+        display: flex;
+        justify-content: start;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -75px;
+        width: 65%;
+        right: -75px;
+    }
+}
+@media screen and (max-width: 800px){
+    .first-title{
+        font-size: 2.6em !important;
+    }
+    .title-text{
+        font-size: 2.4em;
+        line-height: 40px;
+    }
+    .details{
+        width: 32%;
+    }
+    .end-container{
+        height: 50px;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -75px;
+        width: 70%;
+        right: -100px;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 725px){
+    .details{
+        width: 40%;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -50px;
+    }
+}
+@media screen and (max-width: 612px){
+    .details{
+        width: 55%;
+    }
+    .coffee-img{
+        position: absolute;
+        top: -35px;
+    }
+    .end-container{
+        height: 45px;
+    }
+    .social-network-icon i{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 586px){
+    .navbar{
+        margin-bottom: 25px;
+    }
+    .container-coffee{
+        position: absolute;
+        width: 100%; 
+        height: 25%;
+        left: 0;
+        bottom: 0;
+    }
+    .coffee-img{
+        position: absolute;
+        top: 28%;
+        left: 25%;
+        width: 65%;
+        transform: rotate(90deg);
+        overflow-x: hidden;
+    }
+    .details{
+        width: 70%;
+        margin: 10px 0 25px;
+    }
+    .social-network-icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .menu-hamburger{
+        right: 1.8em;
+    }
+    .search-icon{
+        right: 45px;
+    }
+    .first-title{
+        font-size: 2.2em !important;
+    }
+    .title-text{
+        font-size: 2em;
+        line-height: 35px;
+    }
+    .text{
+        font-size: .8em;
+    }
+    .details{
+        width: 90%;
+    }    
+    .coffee-img{
+        position: absolute;
+        width: 80%;
+        top: 30%;
+        left: 15%;
+        overflow-x: hidden;
+    }
+}
